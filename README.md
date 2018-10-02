@@ -1,10 +1,10 @@
-#Tensorflow docker image
+# Tensorflow docker image    
 
-#Aufgabe:
-	1, Ein Dockerimage erstellen;
-	2, Die nötige Software einbinden (Folie 2+3);
-	3, Das Tensorflow-Skript „Hello World“ via Docker ausführen (Folie 4);
-	4, Das Vorgehen detailliert dokumentieren um daraus ein Tutorial erstellen zu können.
+# Aufgabe:  
+	1, Ein Dockerimage erstellen;  
+	2, Die nötige Software einbinden (Folie 2+3);  
+	3, Das Tensorflow-Skript „Hello World“ via Docker ausführen (Folie 4);  
+	4, Das Vorgehen detailliert dokumentieren um daraus ein Tutorial erstellen zu können.  
 
 #Installation Platform: Ubuntu 18.04 LTS, Nvidia driver-390.48, docker 18.06.1-ce.
 
