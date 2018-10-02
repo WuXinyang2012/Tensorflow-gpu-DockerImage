@@ -58,7 +58,8 @@ conda install -c conda-forge tensorflow-gpu
 --------------------------------
 
 
-Now, this tensorflow-gpu docker image is well prepared. You can start the "bash" container and test the following simple script in Python2 environment:  
+Now, this tensorflow-gpu docker image is well prepared.   
+You can start the "bash" container, activate "tensorflow" environment and test the following simple script in python2:  
 
 ```Python
 import tensorflow as tf
