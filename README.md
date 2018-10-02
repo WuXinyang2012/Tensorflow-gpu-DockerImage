@@ -23,36 +23,36 @@ docker pull tensorflow/tensorflow:latest-gpu
 ```
 
 #### 2.2 Start a container with nvidia runtime support  
-'''Bash
+```Bash
 //The container is named as "bash" in this example
 docker run --runtime=nvidia -it --name=bash tensorflow/tensorflow:latest-gpu bash
-'''
+```
 
 ### 3, Install Anaconda in container  
 #### 3.1 Start container and attach it to console.  
-'''Bash
+```Bash
 docker start bash
 docker attach bash
-'''
+```
 
 #### 3.2 Install Anaconda  
-'''Bash
+```Bash
 apt install wget
 cd /home
 wget https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/Anaconda2-5.2.0-Linux-x86_64.sh
 bash Anaconda2-5.2.0-Linux-x86_64.sh
-'''
+```
 
 After installation, create conda environment.  
-'''Bash
+```Bash
 conda create -n tensorflow python=2.7
-'''
+```
 
 Then, install tensorflow-gpu support inside this env.  
-'''Bash
+```Bash
 source activate tensorflow
 conda install -c conda-forge tensorflow-gpu
-'''
+```
 
 
 --------------------------------
@@ -60,7 +60,7 @@ conda install -c conda-forge tensorflow-gpu
 
 Now, this tensorflow-gpu docker image is well prepared. You can start the "bash" container and test the following simple script in Python2 environment:  
 
-'''Python
+```Python
 import tensorflow as tf
 import numpy as np
 import PIL
@@ -70,4 +70,4 @@ hello = tf.constant('Hello, TensorFlow!')
 sess = tf.Session()
 
 print(sess.run(hello))
-'''
+```
