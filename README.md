@@ -35,7 +35,7 @@ docker start bash
 docker attach bash
 ```
 
-#### 3.2 Install Anaconda  
+#### 3.2 Install Anaconda  (Optional - not recommended)
 ```Bash
 apt install wget
 cd /home
